@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — taken 1:1 from the Figma variables of "PG - Merchant v2"
+ * (Surface / Text / Border / Brand / Semantic collections, Figtree type ramp).
+ */
+@theme {
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #533cd2;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #efecff;
+  --color-on-primary-container: #2f1a99;
+  --color-dark: #231f45;
+  --color-dark-hover: #2e2a5a;
+  --color-dark-pressed: #1a1733;
+
+  --color-text-primary: #25253c;
+  --color-text-secondary: #606078;
+  --color-text-tertiary: #8b8ba3;
+  --color-text-disabled: #b0b0c3;
+
+  --color-border: #d9d9e8;
+  --color-border-variant: #eaeaf3;
+
+  --color-surface: #ffffff;
+  --color-surface-variant: #f4f5fa;
+  --color-background: #f4f4f4;
+  --color-container: #eeeeee;
+  --color-container-high: #e5e5e5;
+  --color-scrim: rgb(20 18 51 / 0.5);
+
+  --color-success: #12a150;
+  --color-success-container: #e6f6ed;
+  --color-on-success-container: #0b5d32;
+  --color-error: #e5484d;
+  --color-error-container: #fdecec;
+  --color-on-error-container: #9e1c23;
+  --color-warning-container: #fef3dc;
+  --color-on-warning-container: #8a5200;
+  --color-info: #2f7cf6;
+  --color-info-container: #e8f0fe;
+  --color-on-info-container: #1b4db1;
+
+  --shadow-modal: 0px 16px 40px 0px rgba(26, 26, 64, 0.2);
+  --shadow-toast: 0px 6px 20px 0px rgba(26, 20, 77, 0.14);
+  --shadow-drawer: 0px 0px 40px 0px rgba(37, 37, 60, 0.2);
+}
+
+/* Figma text styles: "<size> <weight>" */
+@utility type-12r { font-size: 12px; line-height: 14px; font-weight: 400; }
+@utility type-12m { font-size: 12px; line-height: 14px; font-weight: 500; }
+@utility type-12sb { font-size: 12px; line-height: 14px; font-weight: 600; }
+@utility type-14r { font-size: 14px; line-height: 16px; font-weight: 400; }
+@utility type-14m { font-size: 14px; line-height: 16px; font-weight: 500; }
+@utility type-14sb { font-size: 14px; line-height: 16px; font-weight: 600; }
+@utility type-16sb { font-size: 16px; line-height: 18px; font-weight: 600; }
+@utility type-18sb { font-size: 18px; line-height: 22px; font-weight: 600; }
+@utility type-20sb { font-size: 20px; line-height: 24px; font-weight: 600; }
+@utility type-26m { font-size: 26px; line-height: 32px; font-weight: 500; }
+
+html,
+body {
+  background: var(--color-surface-variant);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@utility type-14b { font-size: 14px; line-height: 16px; font-weight: 700; }
