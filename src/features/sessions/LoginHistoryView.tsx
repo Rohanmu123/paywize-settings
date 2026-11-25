@@ -98,7 +98,7 @@ export function LoginHistoryView() {
 
       <Modal open={modal.is("sign-out-all")} onClose={modal.close} width={478} title="Sign out all other devices?" description="You stay signed in on this device." testId="sign-out-all-modal">
         <Alert tone="warning" title={`${others} ${others === 1 ? "device" : "devices"} will be signed out`}>
-          They need your password and a code to sign in again.
+          They need your password and a code to sign in again .
         </Alert>
         <ModalActions>
           <Button variant="outline" block onClick={modal.close}>Cancel</Button>
